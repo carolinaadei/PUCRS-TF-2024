@@ -15,29 +15,7 @@ public class Cliente{
         this.historicoEmprestimos=new ArrayList<>();
     }
 
-    public void setMatricula(int matricula){
-        this.matricula=matricula;
-    }
-
-    public void setNome(String nome){
-        this.nome=nome;
-    }
-
-    public void setEmpresa(String empresa){
-        this.empresa=empresa;
-    }
-
-    public void setEquipamentoRetirado(Equipamento equipamento){
-        if (equipamento == null) {
-            this.equipamentoRetirado = null;
-            return;
-        }
-
-        this.equipamentoRetirado = equipamento;
-        historicoEmprestimos.add(equipamento);
-        System.out.println("Equipamento " + equipamento.getNome() + " retirado com sucesso.");
-    }
-
+    
     public void setHistoricoEmprestimos(ArrayList<Equipamento> historicoEmprestimos){
         this.historicoEmprestimos = historicoEmprestimos;
     }
